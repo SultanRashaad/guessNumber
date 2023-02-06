@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    position: relative;
+    background-color: black;
+    color: ghostwhite;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+h1{ 
+    text-align: center;
+    font-size: 70px;
+    
+
+}
+.again{
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+    color : #111;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+   
+
+.questionMark{
+    border: 7px solid beige;
+    color: #111;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto 0 auto;
+    translate: 0 50% ;
+    font-weight: bolder;
+}
+
+.Highmsg,.Lowmsg{
+    display: none;
+}
+.header{
+    position:relative;
+    border-bottom: 7px solid beige;
+}
+.bottom-section{
+   display: flex;
+
+    margin-top: 100px;
+
+}
+.btn {
+    border: none;
+    background-color: beige;
+    color: #222;
+    font-size: 2rem;
+    font-family: inherit;
+    padding: 2rem 3rem;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+.right{
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+.left{
+
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+#num{
+    height: 70px;
+    width: 250px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background:none;
+    border: 5px solid beige ;
+    border-radius: 10px;
+    text-align: center;
+    color: beige;
+    font-size: 50px;
+    padding: 10px 10px;
+}
+
+.msg{
+    height: 33.333%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/*------------ GameOver Modal CSS------------------- */
+
+.hidden{
+    display: none;
+}
+
+.open-modal{
+    position:absolute;
+    box-sizing: border-box;
+    top: 25%;
+    bottom: 50%;
+    left: 25%;
+    background-color: beige;
+    box-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.3);
+    height: 50vh;
+    width: 50%;
+    z-index: 10;  
+    border-radius: 20px;
+}
+
+.modal-heading{
+    color: #111;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 45px;
+    font-weight: 1000;
+}
+
+.modal-bottomSection{
+    margin-top: 20px;
+    /* border: solid 5px blue; */
+    display: flex;
+    
+}
+
+.modal-Bottomleft{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.75rem 3.5rem;
+    margin: auto auto;
+    border: none;
+}
+
+.close-modal {
+    position: absolute;
+    top: 3px;
+    right: 1rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+    box-sizing:border-box;
+}
+    
+    
+.modal-Bottommiddle{
+    border-right: solid 10px grey;
+    height: 15rem;
+    border-radius: 10px;
+}
+.modal-Bottomright{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.75rem 3.5rem;
+    margin: 2rem auto;
+    border: none;
+    color: #111;
+}
+
+
+
+.overlay{
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+.play-again{
+    font-size: 25px;    
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: rgb(9, 237, 40);
+    border-radius: 10px;
+    z-index: 15;
+    box-shadow: -0.5rem 1rem 2rem rgb(0, 0, 0) ;
+    padding: 5px 10px;
+}
+.play-again:hover{
+    background-color:rgb(0, 255, 238);
+    box-shadow: 0 0rem 1rem rgb(0, 0, 0) ;
+
+}

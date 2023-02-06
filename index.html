@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessGame</title>
+    <link rel="stylesheet" href="guess.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Guess game</h1>
+        <div>
+            <button class="again">Again</button>
+        </div>
+        <div class="questionMark">?</div>
+    </div>
+    <div class="bottom-section">
+        <div class="left">
+            <input type="number" name="mynumber" id="num">
+            <button class="btn check">check!</button>
+        </div>
+            <div class="right">
+                <p class="msg">Start guessing...</p>
+                <div class="msg">
+                    Score: <span class="score">20</span>
+                </div>
+                <div class="msg">
+                    🎖️HighScore: <span class="highscore">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gameover -->
+    <div class="open-modal hidden">
+        <button class="close-modal">&times;</button>
+        <div class="modal-heading">Game Over</div>
+        <div class="modal-bottomSection">
+            <div class=" modal-Bottomleft">
+                <button class="play-again">Play Again</button>
+            </div>
+            <div class="modal-Bottommiddle"></div>
+            <div class=" modal-Bottomright">👻👻Game Over...</div>
+        </div>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
